@@ -257,7 +257,28 @@ public class NotificationMonitorService extends NotificationListenerService impl
             String pkgName = paramStatusBarNotification.getPackageName();
             String title = localObject.getString("android.title");
             String text = (localObject).getString("android.text");
+
+
+            /*
+                public static final String EXTRA_SUB_TEXT = "android.subText";
+    public static final String EXTRA_SUMMARY_TEXT = "android.summaryText";
+    public static final String EXTRA_TEMPLATE = "android.template";
+    public static final String EXTRA_TEXT = "android.text";
+    public static final String EXTRA_TEXT_LINES = "android.textLines";
+    public static final String EXTRA_TITLE = "android.title";
+    public static final String EXTRA_TITLE_BIG = "android.title.big";
+             */
+            String subText = localObject.getString("android.subText");
+            String summaryText = localObject.getString("android.summaryText");
+            String template = localObject.getString("android.template");
+            String textLines = localObject.getString("android.textLines");
+            String big = localObject.getString("android.title.big");
+
+            //tagg
             Log.i(AppConst.TAG_LOG, "Notification removed [" + pkgName + "]:" + title + " & " + text);
+
+            Log.i("tagg", "Notification removed [" + pkgName + "]:" + title + " & " + text +"\n========="+subText+"\n"+summaryText+"\n"+template+"\n"+textLines+"\n"+big+"\n");
+
         }
     }
 

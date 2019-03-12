@@ -1,9 +1,5 @@
 package com.zhiyi.onepay;
 
-/**
- * Created by Administrator on 2018/8/6.
- */
-
 public class AppConst {
     public static final String KeyAppId = "appid";
     public static final String KeyToken = "token";
@@ -11,13 +7,13 @@ public class AppConst {
     public static final String KeyBoolLog = "b_set_log";
 //    public static final String KeyBoolWx = "b_set_wx";
 //    public static final String KeyBoolZfb = "b_set_zfb";
-    /** 闊抽噺*/
+    /** 音量*/
     public static final String KeyMute = "mute";
-    /**鏈嶅姟鍣ㄥ湴鍧�*/
+    /**服务器地址*/
 //    public static final String HostUrl = "https://pxpay.ukafu.com/";
     public static final String HostUrl = "http://test.ukafu.com/";
 
-    /**浼犺緭鏁版嵁涓篣RL鐨凨EY*/
+    /**传输数据为URL的KEY*/
     public static final String ACTION_URL = "a_url";
 
     public static int version;
@@ -30,7 +26,7 @@ public class AppConst {
     public static String Token="";
     public static String Secret="";
 
-    public static int DetaTime = 0;//鎵嬫満鍜屾湇鍔″櫒鐨勬椂闂村樊
+    public static int DetaTime = 0;//手机和服务器的时间差
 
     public static final String TAG_LOG = "ZYKJ";
 
